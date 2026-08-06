@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Msg</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header::before {
+            content: "";
+            background-image: url(https://images.pexels.com/photos/38809718/pexels-photo-38809718.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0%;
+            left: 0%;
+            right: 0%;
+            bottom: 0%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .navi {
+            display: flex;
+            border: 2px solid black;
+            padding: 3px;
+            margin: 3px;
+            height: 100px;
+            width: auto;
+            /* justify-content: center; */
+            border-style: none;
+        }
+
+        .logo {
+            display: inline-block;
+            position: absolute;
+            border-radius: 5px;
+        }
+
+        .mid {
+            display: flex;
+            margin: 3px 600px;
+            border: 2px solid red;
+            padding: 5px;
+            font-weight: 400;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            border-style: none;
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            height: 400px;
+            width: auto;
+            border: 2px solid red;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .box1 {
+            width: 400px;
+            text-align: center;
+        }
+        figcaption{
+            text-align: center;
+        }
+
+        .box3 {
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            padding-right: 20px;
+        }
+
+        .memory {
+            display: flex;
+            margin: 2px 10px;
+            text-align: center;
+            width: 100vw;
+            flex-wrap: wrap;
+        }
+
+        div img {
+            margin: 2px;
+            border-radius: 100px;
+        }
+        h2{
+            text-align: center;
+            text-decoration:underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navi">
+            <div class="logo"><img src="logo.jpg" alt="logo" width="50" height="50"></div>
+            <div class="mid">My<space>-</space>Love</div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box1">Happy Birth-Day.<br>"May this new year of your life bring clarity to your goals, courage to
+            pursue
+            your passion, and unwavering confidence in your abilities".</div>
+        <div class="box2">
+            <figure>
+                <img src="img.jpg" alt="img" width="300" height="200">
+                <figcaption>
+                    Peace of my life... Putri.
+                </figcaption>
+            </figure>
+        </div>
+        <div class="box3">"You are my favorite thought, my favorite notification,and my favorite place to be."</div>
+    </div>
+    <h2>Memories</h2><br>
+    <div class="memory">
+        <div><img src="chat.png" alt="chat" width="400" height="400"></div>
+        <div><img src="meet.png" alt="meet" width="400" height="400"></div>
+        <div><img src="momos.png" alt="momos" width="400" height="400"></div>
+        <div><img src="city park.png" alt="city-park" width="300" height="450"></div>
+    </div>
+
+</body>
+
+</html>
