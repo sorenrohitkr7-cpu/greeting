@@ -35,9 +35,10 @@
             align-items: center;
             justify-content: space-between;
             padding: 10px 20px;
+            position: fixed;
         }
 
-        .logo img{
+        .logo img {
             /* display: inline-block; */
             /* position: absolute; */
             border-radius: 5px;
@@ -57,7 +58,7 @@
             /* flex: 1;  */
         }
 
-        .container {
+        .container, .container2 {
             display: flex;
             flex-wrap: wrap;
             /* height: 400px; */
@@ -69,22 +70,34 @@
             gap: 20px;
             text-align: center;
         }
-        .container img{
+        .container{
+            position:fixed;
+            
+        }
+
+        .container img, .container2 img {
             border-radius: 100px;
         }
 
-        .box1, .box2, .box3 {
+        .box1,
+        .box2,
+        .box3 {
             flex: 1 1 300px;
+            color: rgb(244, 247, 246);
+            /* font-weight: bold ; */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-shadow: 2px 1px black;
+
+            figcaption {
+                text-align: center;
+                margin: 5px;
+            }
         }
-        figcaption{
-            text-align: center;
-            margin: 5px;
-        }
-        
-        .memory {
+
+        .memory, .dream {
             display: flex;
             justify-content: center;
-            gap:15px;
+            gap: 15px;
             flex-wrap: wrap;
             padding: 20px;
         }
@@ -94,19 +107,35 @@
             height: auto;
             border-radius: 100px;
         }
-        h2{
+
+        h2 {
             text-align: center;
-            text-decoration:underline;
+            text-decoration: underline;
             margin-top: 20px;
         }
+        h3{
+            margin: 3px 10px;
+            font-family:cursive;
+        }
+
         /* Media query for phones */
-        @media(max-width:600px){
-            .mid{
-                font-size: 18px;
+        @media(max-width:600px) {
+            .mid {
+                width: auto;
             }
-            .container{
-                flex-direction:column;
+
+            .container {
+                flex-direction: column;
             }
+            .container2{
+                flex-direction: column;
+            }
+        }
+
+        .dream img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 100px;
         }
     </style>
 </head>
@@ -115,7 +144,7 @@
     <header class="header">
         <nav class="navi">
             <div class="logo"><img src="logo.jpg" alt="logo" width="50" height="50"></div>
-            <div class="mid">My<space>-</space>Love</div>
+            <!-- <div class="mid"><img src="Travel.png" alt="" width="50"></div> -->
         </nav>
     </header>
     <div class="container">
@@ -138,8 +167,21 @@
         <div><img src="meet.png" alt="meet" width="400" height="400"></div>
         <div><img src="momos.png" alt="momos" width="400" height="400"></div>
         <div><img src="city park.png" alt="city-park" width="300" height="450"></div>
+        <div><img src="Park2.jpg" alt="park2" width="500"></div>
+        <div><img src="night.png" alt="night" width="500"></div>
+        <div><img src="station.png" alt="sit" width="500"></div>
+        <div><img src="laugh.png" alt="laugh" width="500"></div>
     </div>
-
+    <h2>Dreams</h2>
+    <div class="container2">
+        <div class="dream">
+            <div><img src="garden.png" alt="garden" width="500"></div>
+            <div><img src="movies.png" alt="movies" width="500"> </div>
+            <div><img src="train.png" alt="train" width="500"></div>
+            <div><img src="track.png" alt="track" width="500"></div>
+        </div>
+    </div>
+<h3>To be continued........</h3>
 </body>
 
 </html>
